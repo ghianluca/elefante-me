@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Documentation for Flatsome by UX Themes</title>
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/github.css">
+<script src="javascript/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="javascript/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<a href="#contents" id="to-top">Top</a>
+
+<div class="page">
+<h1>FLATSOME THEME DOCUMENTATION</h1>
+
+<h3>A how-to guide and general information to help you get the most out of your new theme.</h3>
+<p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - I encourage you to read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, feel free to send us a <a href="#8">support ticket</a></p>
+
+<table class="details">
+	<tr>
+		<td>Docs version</td>
+		<td>1.3</td>
+	</tr>
+	<tr>
+		<td>Last Update</td>
+		<td>11/09/2013</td>
+	</tr>
+	<tr>
+		<td>Created by</td>
+		<td>UX Themes</td>
+	</tr>
+	<tr>
+		<td>Online Demo</td>
+		<td>http://flatsome.uxthemes.com</td>
+	</tr>
+</table>
+
+<a name="contents"></a>
+<h3>Contents</h3>
+<ol class="table-of-contents">
+	<li><a href="#1">1. Theme Installation</a></li>
+	<ol>
+		<li><a href="#1.1">1.1 Install Theme</a></li>
+		<li><a href="#1.2">1.2 Install plugins</a></li>
+		<li><a href="#1.3">1.3 Setup Woocommerce</a>
+			<ol>
+				<li><a href="#1.3.1">- Change catalog image sizes</a></li>
+				<li><a href="#1.3.2">- Regenerate thumbnails</a></li>
+				<li><a href="#1.3.3">- Remove default WooCommerce styling</a></li>
+			</ol>
+		</li>
+		<li><a href="#1.4">1.4 Install demo content(optional)</a></li>
+	</ol>
+
+	<li><a href="#2">2. Pages</a></li>
+	<ol>
+		<li><a href="#2.1">2.1 Page templates</a></li>
+		<li><a href="#2.2">2.2 Homepage / blog setup</a></li>
+	</ol>
+
+	<li><a href="#3">3. Navigation</a></li>
+	<ol>
+		<li><a href="#3.1">3.1 Menu locations</a></li>
+		<li><a href="#3.2">3.2 Menu dropdown</a></li>
+	</ol>
+
+	<li><a href="#4">4. Shortcodes</a></li>
+	<ol>
+		<li><a href="#4.1">4.1 Shortcodes overview</a></li>
+		<li><a href="#4.2">4.2 UX Banners Shortcode</a></li>
+		<li><a href="#4.3">4.3 UX Sliders Shortcode</a></li>
+	</ol>
+	
+	
+	<li><a href="#5">5. Widgets</a></li>
+	<ol>
+		<li><a href="#5.1">5.1 Widget areas</a></li>
+		<li><a href="#5.2">5.2 Custom UX Themes widgets</a></li>
+	</ol>
+
+	<li><a href="#6">6. Custom post types</a></li>
+	<ol>
+		<li><a href="#6.1">6.1 Blocks Custom Postype</a></li>
+		<li><a href="#6.2">6.1 Featured Item Custom Postype</a></li>
+	</ol>
+
+	<li><a href="#7">7. How-tos / Guides</a></li>
+	<ol>
+		<li><a href="#7.1">7.1 How to add a newsletter box in footer</a></li>
+		<li><a href="#7.2">7.2 How to add payment icons to footer</a></li>
+		<li><a href="#7.3">7.3 How to enable Catalog Mode</a></li>
+
+	</ol>
+	
+
+	<li><a href="#8" href="#">8. Get support!</a></li>
+
+
+</ol>
+
+
+
+<!-- Chapter 1 -->
+
+
+
+<a name="1" href="#top"></a><h2>1.0 Theme installation</h2>
+<a name="1.1" href="#top"></a><h3>1.1 Install Theme</h3>
+<p>To install this theme you must have a working version of WordPress already installed. For information in regard to installing the WordPress platform, please see the WordPress Codex - http://codex.wordpress.org/Installing_WordPress
+
+When you are ready to install a theme, you must first upload the theme files and then activate the theme itself. The theme files can be uploaded in two ways:</p>
+
+<ol class="ol">
+		<li><strong>FTP Upload:</strong> Using your FTP program, upload the non-zipped theme folder into the <b>/wp-content/themes/</b> folder on your server</li>
+		<li><strong>WordPress Upload:</strong> Navigate to <b>Appearance &gt; Add New Themes &gt; Upload</b>. Go to browse, and select the zipped theme folder. Hit “Install Now” and the theme will be uploaded and installed.</li>
+	</ol>
+
+<p class="info">Once the theme is uploaded, you need to activate it. Go to <b>Appearance &gt; Themes</b> and activate your chosen theme.</p>
+
+<a name="1.2" href="#top"></a><h3>1.2 Install plugins</h3>
+
+<p>This theme comes bundled with many plugins. Some are required and some are optional.</p>
+<ul class="features">
+	<li><strong>WooCommerce</strong> - WordPress eCommerce plugin (Required)</li>
+	<li><strong>Ninja Forms</strong> - Used for contact form and newsletter signup (Optional)</li>
+	<li><strong>Regenerate Thumbnails</strong> - Use to resize product images to recommended sizes. (Optional)</li>
+	<li><strong>Taxonomy Metadata</strong> - Used to create custom fields in settings for Product categories. (Optional)</li>
+	<li><strong>WooSidebars</strong> - Create unlimted sidebars for pages and footers (Optional)</li>
+	<li><strong>YITH WooCommerce Ajax Search</strong> - Adds live search functionality to search box(Optional)</li>
+	<li><strong>YITH WooCommerce Wishlist</strong> - Adds wish list functionalty to category grid and product pages(Optional)</li>
+</ul>
+
+<p class="step">Install all bundled plugins</p>
+<img class="frame" src="images/flatsome_required_3.gif"/>
+
+<p class="well"> Once plugins are installed, they need to be activated at <b>Plugins > Installed plugins</b></p>
+
+
+<p class="step">Install WooCommerce pages</p>
+
+<img class="frame" src="images/flatsome_woocommerce.gif"/>
+
+
+<a name="install" href="#" href="#top"></a>
+<a name="1.3" href="#top"></a><h3>1.3 Setup WooCommerce</h3>
+
+
+<a name="1.3.1" href="#top"></a><p class="step">Change image sizes</p>
+
+<p>This theme uses image sizes other than WooCommerce normal sizes. Go to <b>WooCommerce > Settings > Catalog</b> and change sizes to these:<p>
+<img src="images/image_sizes.jpg" class="frame"/>
+<p class="well">Note: You dont have to use the same heights. But its recommended to use the same widths</p>
+
+
+<a name="1.3.2" href="#top"></a><p class="step">Regenerate thumbnails</p>
+<p class="lead">After image sizes are set, you'll need to resize all images. We can do this automaticly with the plugin: "Regenerate Thumbnails".</p>
+
+<ol class="ol">
+		<li>Go to <b>Tools > Regen. Thumbnails</b></li>
+		<li>Click <b>Regenerate All Thumbnails</b></li>
+</ol>
+<p class="well">You'll need to install "Regenerate Thumbnails" if you cant find it under Tools.</p>
+
+
+
+
+<a name="1.3.3" href="#top"></a>
+<p class="step">Remove default WooCommerce styling</p>
+<p>Go to <b>WooCommerce > Settings > General</b> and uncheck "Enable WooCommerce CSS" and "Enable Lightbox". This theme has built in CSS and lightbox.</p>
+<img src="images/remove_style.gif" class="frame"/>
+
+
+<a name="1.4" href="#top"></a><h3>1.4 Install demo content (Optional)</h3>
+
+<p>The theme comes with a .xml file containing demo content you can import into your WordPress site. This will help you get started, in case you are running on a fresh WordPress installation with no content at all. </p>
+<ol class="ol">
+	<li>Go to <b>Tools > Import</b></li>
+	<li>Click "<b>WordPress</b>" to install the WordPress importer.</li>
+	<li>On '<b>Import Wordpress</b>' screen click 'choose file' and select the file <b>/themefolder/Dummy data/flatsome_demo_content.xml</b></li>
+	<li>Click Upload file and import and wait for it to import</li>
+</ol>
+
+
+<a name="2" href="#top"></a><h2>2.0 Pages</h2>
+<a name="2.1" href="#top"></a><h3>2.1 Page templates</h3>
+	<img src="images/pagetemplates.png" class="img-right">
+	<p class="lead">Here is a list of pages templates that are included in this theme</p>
+
+		<h6>Default template</h6>
+		<p>- Default content template with a title top left.</p>
+
+		<h6>Default Template (no-title)</h6>
+		<p>- Default content template with no title. Useful if you want a homepage thats inside a container (not full-width)</p>
+
+		<h6>Full Width (100%)</h6>
+		<p>- 100% width template. Use this if you want to have sliders or content that goes all the way to screen edges</p>
+
+		<h6>Left Sidebar</h6>
+		<p>- Default content with a left sidebar</p>
+
+		<h6>Right Sidebar</h6>
+		<p>- Default content with a right sidebar</p>
+
+		<h6>My Account Sidebar</h6>
+		<p>- template that includes the My Account navigation in sidebar. It also has a nice image of loged in user top-left. Use this template for Account pages.</p>
+
+		<h6>Checkout Page</h6>
+	<p>- Use this for Cart and Checkout page. This template adds a nice Checkout breadcrumb to the top.</p>
+
+
+<a name="2.2" href="#top"></a><h3>2.2 Homepage / Blog setup</h3>
+
+	<img src="images/homepage_setup.png" class="img-right">
+
+<ol class="ol">
+			<li>Go to <b>Settings &gt; Reading</b></li>
+			<li>Select "<b>A static page</b>"</li>
+			<li>For <b>Front page</b> select the Homepage page you want in the select box.
+				If no demo content is uploaded you will need to create a new page.</li>
+			<li>For <b>Post page</b> select a page called "Blog". This could be any blank page. WordPress will render it as a blog.</li>
+		</ol>
+
+
+
+<a name="3" href="#top"></a><h2>3.0 Navigation</h2>
+<a name="3.1" href="#top"></a><h3>3.1 Menu locations</h3>
+
+<p class="lead">This theme has 4 menu locations</p>
+
+		<h6>Main Menu</h6>
+		<p>This is main navigation thats located in the header</p>
+
+		<h6>Top bar Menu </h6>
+		<p>This is located at the top bar. This menu does not support dropdown</p>
+
+		<h6>Footer Menu</h6>
+		<p>This is located at the bottom above copyright text. This menu does not support dropdown"</p>
+
+		<h6>My Account Menu</h6>
+		<p>This menu is visible for logged in users at the left of mini cart. Menu is also located at the my account page template.</p>
+
+
+<a name="3.2" href="#top"></a><h3>3.2 Menu Dropdown</h3>
+<p class="lead">This theme has a built-in multi column menu system. Menus are created using the core WordPress Menu manager. These images shows how you should structure your menus.</p>
+<p>
+
+<h6>Creating a Simple dropdown</h6>
+<img src="images/dropdpown_normal.gif"/>
+
+<h6>Creating a multi-column dropdown</h6>
+<img src="images/dropdpown_multi.gif"/>
+
+<h6>Creating multi-column dropdown with image</h6>
+<img src="images/dropdpown_image.gif"/>
+
+<h6>Cant see CSS Classes or Description?</h6>
+<p>You need to enable these checkboxes to view field for CSS classes and Description:</p>
+<img src="images/dropdown_settings.jpg"/>
+
+
+<a name="4" href="#top"></a><h2>4.0 Shortcodes</h2>
+
+<a name="4.1" href="#top"></a><h3>4.1 Shortcode overview</h3>
+<p class="lead">We strongly belive in Shortcodes and we built the theme around shortcodes. All layouts, banners, sliders etc. are built using shortcodes. You'll find alot of shortcode examples by browsing the <a href="http://flatsome.uxthemes.com">theme demo.</a> These codes can be copy and pasted into the page editor. A simple shortcode inserter is also included.</p> <img src="images/shortcode_inserter.jpg" class="img-right"/>
+
+<h6>Here is a list of all our shortcodes:</h6>
+<ul class="shortcode-list">
+		<li>
+			<b>[ux_banner]</b>
+			<p> Let you create amazing responsive banners</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-banners/">Demo / Examples</a>
+		</li>
+		<li>
+			<b>[ux_slider]</b>
+			<p> Let you create amazing responsive sliders</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-ux-sliders/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[ux_banner_grid]</b>
+			<p>Used to display [ux_banners] in a beautiful grid.</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-banners/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[col]</b>
+			<p>Used to create columns inside pages and posts and banner grid</p>
+		</li>
+
+		<li>
+			<b>[row]</b>
+			<p> Used to create rows for columns</p>
+		</li>
+
+		<li>
+			<b>[blog_posts]</b>
+			<p>Displays a beautiful blog post slider</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-blog-posts/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[button]</b>
+			<p>Displays a button</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-buttons/">Demo / Examples</a>
+		</li>
+
+
+		<li>
+			<b>[featured_box]</b>
+			<p>Highlight features of your shop</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-featured-boxes/">Demo / Examples</a>
+		</li>
+
+
+		<li>
+			<b>[map]</b>
+			<p>Displays a google map</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-google-map/">Demo / Examples</a>
+		</li>
+
+
+		<li>
+			<b>[accordion]</b>
+			<p> Let you create amazing responsive sliders</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-tabs-accordian/">Demo / Examples</a>
+		</li>
+
+
+		<li>
+			<b>[message_box]</b>
+			<p>Creates a simple message box. Add any content inside box.</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-message-box/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[product_lookbook]</b>
+			<p>Creates a large beautiful scrollable lookbook of selected category</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-product-lookbook/">Demo / Examples</a>
+		</li>
+
+
+		<li>
+			<b>[products_pinterest_style]</b>
+			<p>Creates a pintrest style grid of a selected product category.</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/pinterest-style/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[ux_bestseller_products]</b>
+			<p>Creates a nice slider of bestsellers</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-product-sliders/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[ux_featured_products]</b>
+			<p>Creates a nice slider of featured products</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-product-sliders/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[ux_sale_products]</b>
+			<p>Creates a nice slider of products on sale</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-product-sliders/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[ux_latest_products]</b>
+			<p>Creates a nice slider of new products</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-product-sliders/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[share]</b>
+			<p>Creates a row of social icons that lets visitor share current page.</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-sharefollow-icons/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[follow]</b>
+			<p>Creates a row of social icons with selected links to popular social networks</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-sharefollow-icons/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[tabgroup]</b>
+			<p>Creates horizontal tabbed content</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-tabs-accordian/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[tabgroup_vertical]</b>
+			<p>Creates vertical tabbed content</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-tabs-accordian/">Demo / Examples</a>
+		</li>
+
+
+		<li>
+			<b>[team_member]</b>
+			<p>Creates a nice introduction box of a team member</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-team-members/">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[testimonial]</b>
+			<p>Add testemonials</p>
+			<a href="#">Demo / Examples</a>
+		</li>
+
+		<li>
+			<b>[title]</b>
+			<p>Adds a nice section title</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-titles-dividers/">Demo / Examples</a>
+		</li>
+
+
+		<li>
+			<b>[divider]</b>
+			<p>Adds a nice divider</p>
+			<a href="http://flatsome.uxthemes.com/shortcodes/shortcode-titles-dividers/">Demo / Examples</a>
+		</li>
+</ul>
+
+
+<a name="4.2" href="#top"></a><h3>4.1 UX Banner Shortcode</h3>
+<p class="lead">UX Banners are responsive animated banners used for slides and banners. Banners like this is the future of eCommerce banners. The banners are structured like this: <b>[ux_Banner]</b> HTML content <b>[/ux_banner]</b></p>
+
+<h6>Example of UX Banner shortcode</h6>
+
+
+<p class="well"><b>[ux_banner bg="http://imageurl" height="560px" link="" animation="flipInX" text_align="center" text_pos="center" text_color="light" text_width="80%" hover="zoom"]</b> CONTENT <b>[/ux_banner]</b></p>
+
+<table class="shortcode">
+	<tr>
+		<td><b>bg:</b></td>
+		<td width="20px"></td>
+		<td>Enter background image URL or #hex code</td>
+	</tr>
+	<tr>
+		<td><b>height:</b></td>
+		<td width="20px"></td>
+		<td>Height of banner. Width is 100% and adjusted to the container banner is inserted into.</td>
+	</tr>
+		<tr>
+		<td><b>link:</b></td>
+		<td width="20px"></td>
+		<td>Enter where banner should be linked</td>
+	</tr>
+		<tr>
+		<td><b>animation:</b></td>
+		<td width="20px"></td>
+		<td>Available text animations: <b>fadeIn</b>, <b>fadeInLeft</b>, <b>fadeInRight</b>, <b>fadeInUp</b>, <b>fadeInDown</b>, <b>fadeInUpBig</b>, <b>fadeInDownBig</b>, <b>fadeInLeftBig</b>, <b>fadeInRightBig</b>,  <b>flipInX</b>, <b>flipInY</b>, <b>bounceIn</b>, <b>bounceInDown</b>, <b>bounceInLeft</b>, <b>bounceInRight</b>, <b>rotateInUpLeft</b>, <b>rotateInUpRight</b>, <b>rotateInDownRight</b> </td>
+	</tr>
+
+	<tr>
+		<td><b>text_align:</b></td>
+		<td width="20px"></td>
+		<td>Enter align of text. <b>left</b>, <b>right</b> or <b>center</b></td>
+	</tr>
+
+	<tr>
+		<td><b>text_pos:</b></td>
+		<td width="20px"></td>
+		<td>Enter where text should be positioned on the banner <b>left</b>, <b>right</b> or <b>center</b></td>
+	</tr>
+
+
+	<tr>
+		<td><b>text_color:</b></td>
+		<td width="20px"></td>
+		<td>Choose between <b>light</b> or <b>dark</b> text color.</td>
+	</tr>
+
+	<tr>
+		<td><b>text_color:</b></td>
+		<td width="20px"></td>
+		<td>Choose between <b>light</b> or <b>dark</b> text color.</td>
+	</tr>
+
+	<tr>
+		<td><b>text_width:</b></td>
+		<td width="20px"></td>
+		<td>Change the width of the text container</td>
+	</tr>
+
+
+	<tr>
+		<td><b>hover:</b></td>
+		<td width="20px"></td>
+		<td>Add hover effect. Available effects: <b>zoom</b>, <b>fade</b></td>
+	</tr>
+
+	<tr>
+		<td><b>parallax:</b></td>
+		<td width="20px"></td>
+		<td>Creates a parallax effect to the banner. parallax="1" is weak effect, and parallax="9" is strong effect. Select any number between.</td>
+	</tr>
+</table>
+
+
+<a name="4.3" href="#top"></a><h3>4.1 UX Slider Shortcode</h3>
+<p class="lead">UX Sliders are inserted with a Shortcode Generator. Its possible to slide almost
+anything by wrapping <b>[ux_slider]</b> <b>[/ux_slider]</b> around the content. Slides can be shortcodes, divs or images.</p>
+
+<h6>Example of UX Slider shortcode</h6>
+
+<p class="well"><b>[ux_slider timer="4500" arrow="false/true" bullets="false/true" auto_slide="false/true" hide_nav="false/true" nav_color="dark/light"]</b> SLIDES  <b>[/ux_slider]</b></p>
+
+<p></p>
+
+
+<table class="shortcode">
+	<tr>
+		<td><b>timer:</b></td>
+		<td width="20px"></td>
+		<td>Change how long each slide lasts if auto_slide is true. 45000 = 4,5 secounds</td>
+	</tr>
+
+	<tr>
+		<td><b>arrow:</b></td>
+		<td width="20px"></td>
+		<td>Show arrow or not (true/false)</td>
+	</tr>
+
+
+	<tr>
+		<td><b>bullets:</b></td>
+		<td width="20px"></td>
+		<td>Show bullets or not (true/false)</td>
+	</tr>
+
+
+	<tr>
+		<td><b>auto_slide:</b></td>
+		<td width="20px"></td>
+		<td>Auto slide or not (true/false)</td>
+	</tr>
+
+	<tr>
+		<td><b>hide_nav:</b></td>
+		<td width="20px"></td>
+		<td>Hide nav before mouse hover (true/false)</td>
+	</tr>
+
+
+	<tr>
+		<td><b>nav_color:</b></td>
+		<td width="20px"></td>
+		<td>Light or dark bullets and arrows (light/dark)</td>
+	</tr>
+
+
+</table>
+
+
+<h6>Example of how to create a slide</h6>
+<img src="images/flatsome_slider.gif" class="frame"/>
+
+<a name="5" href="#top"></a><h2>5.0 Widgets</h2>
+<a name="5.1" href="#top"></a><h3>5.1 Widget areas</h3>
+	<p class="lead">Here is a list of pages templates that are included in this theme</p>
+
+		<h6>Sidebar</h6>
+		<p>The default sidebar visible on Blog and Pages with sidebar template
+</p>
+
+		<h6>Shop Sidebar
+</h6>
+		<p>Sidebar for shop category pages. Visible if category with sidebar is selected in Theme Option Panel
+</p>
+
+		<h6>Footer 1 (4 colum)</h6>
+		<p>Top footer. Only visible if widget is added.  Add a widget to create a column. 4 widgets = 4 columns.
+</p>
+
+	<h6>Footer 2 (4 colum)</h6>
+		<p>Bottom footer. Only visible if widget is added.  Add a widget to create a column. 4 widgets = 4 columns</p>
+
+	<h6>Footer Payment images:</h6>
+		<p>Footer payment images is just html added in Theme Option Panel under > Footer. Add any text or image here</p>
+<a name="5.2" href="#top"></a><h3>5.1 Custom UX Themes widgets</h3>
+
+<h6>Flatsome Recent Posts</h6>
+<p>Displays a list of recents blog posts</p>
+
+
+<a name="6" href="#top"></a><h2>6.0 Custom post types</h2>
+<a name="6.1" href="#top"></a><h3>6.1 Blocks Custom Postype</h3>
+<img src="images/blocks.png" class="img-right">
+<p class="lead">The block postype let you create "HTML Blocks" that can be inserted to pages, widgets, and Theme Options using Shortcodes. An example could be to create the homepage slider as a "Block" and insert it to the homepage page with a shortcode like <b>[block id="homepage-slider]</b></p>
+
+<h6>How To create a block:</h6>
+<ol class="ol">
+		<li>Go to <b>Blocks > Add New</b></li>
+		<li>Add title, insert content and save.</li>
+		<li>Copy the <b>[block]</b> shotcode and insert it wherever you want.</li>
+</ol>
+
+
+<a name="6.2" href="#top"></a><h3>6.2 Featured Item Custom Postype</h3>
+<p class="lead">Featured Item Post type lets you create "portfolio" style pages. This can be used to create lookbooks, or feature your products in various ways. Featured Items can be grouped in categories.</p>
+
+<h6>How To create a featured item:</h6>
+<ol class="ol">
+		<li>Go to <b>Featured Item > Add New</b></li>
+		<li>Insert images in main content field.</li>
+		<li>Write featured item description in the "Excerpt" field.</li>
+		<li>Select featured image that will show in Featured Item grid.</li>
+</ol>
+
+<p class="well">To display the featured items you need to create new a page and select a "Featured Items" template. </p>
+
+<p class="well">TIP: To create a image slider simply insert images and wrap [ux_slider] shortcode around the images.</p>
+
+
+
+
+<a name="7" href="#top"></a><h2>7.0 How-tos / Guides</h2>
+<a name="7.1" href="#top"></a><h3>7.1 How to add a newsletter box in footer</h3>
+<p>Newsletter box seen on demo page is powered by "Ninja forms". We have included a example form you can import into ninja forms and add to footer.</p>
+<ol class="ol">
+		<li>Go to <b>Forms > Import / Export</b></li>
+		<li>Import this file: <b>themefolder/Dummy data/Ninjaforms_Newsletter_signup.nff</b></li>
+		<li>Now you can drag "<b>Ninja Form Widget</b>" into footer widget area and select "<b>Newsletter signup</b>"</li>
+</ol>
+
+<a name="7.2" href="#top"></a><h3>7.2 How to add payment icons to footer</h3>
+<p>Follow these steps to add payment icons:</p>
+<ol class="ol">
+		<li>First you need a image file of the payment icons. Check themefolder/Assets/Icons</li>
+		<li>Upload the image file here: <b>Media > Add new</b></li>
+		<li>Go to <b>Apperance > Theme Options > Footer</b></li>
+		<li>Look for "Footer bottom right content"</b></li>
+		<li>Add '<b>&lt;img src="http://url_of_image" /></b>' and save.</li>
+</ol>
+
+
+<a name="7.3" href="#top"></a><h3>7.3 How to enable Catalog Mode</h3>
+
+<p class="well">Go to <b>Theme Option Panel > Catalog Mode</b> to enable Catalog mode</p>
+
+<p class="step">TIP: Adding an Enquery form to product page</p><br>
+<ol class="ol">
+		<li>First you need to create a form with Ninja Forms (Forms in wp-admin)</li>
+		<li>Then go to Theme Option Panel > Catalog Mode</li>
+		<li>Add this code to "Add to cart replacement"-field</li>
+</ol>
+
+<pre>
+[accordion]
+  [accordion-item title="Send us an enquiry"]
+	[ninja_forms_display_form id=4]
+  [/accordion-item]
+[/accordion]
+</pre>
+
+<p class="step">TIP: Adding search or social icons to header</p>
+<p>Go to <b>Theme Option Panel > Catalog Mode</b> and look for "<b>Cart / Account replacement</b>"</p>
+<p>To get a search field enter this:</p>
+<pre>[search]</pre>
+
+<p>To get a social icons enter this:</p>
+<pre>[follow twitter="http://twitter.com/uxthemes" facebook="http://facebook.com/uxthemes"<br> email="post@email.com" pinterest="http://pinterest.com/uxthemes"]</pre>
+
+<a name="8" href="#top"></a><h2>8.0 Support</h2>
+<h6>Need support? Please email us at support@uxthemes.com</h6>
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+strong{color: #111}
+
+p{line-height: 22px;color: #666}
+
+ol li{margin-bottom: 15px;padding-top: 15px; border-top: 1px solid #EEE;}
+
+.shortcode-list li{margin-bottom: 20px;padding-bottom: 10px;}
+.shortcode-list li b{color: #000}
+.shortcode-list li p{margin:5px 0 0}
+.frame{border: 3px solid #EEE;display: block}
+
+
+.well{padding: 10px;background: #e2e9f4;border:1px solid #aeaeae;width: 100%}
+
+.img-right{float:right;margin-left: 50px;border: 2px solid #DDD;max-width: 500px}
+
+h1 {
+  font-size: 62px;
+}
+h2 { font-size: 36px; text-align: left; color:#FFF; padding:15px;background:#000;text-transform: uppercase;margin-top: 150px}
+h3 {
+  margin-top: 50px;
+  padding: 10px;
+  color:#FFF;
+  background: #047cd9;
+  font-size: 24px; 
+}
+
+h6{font-size: 18px;font-weight: bold;color: #000;margin-bottom: 0px;margin-top: 15px}
+
+h4 { font-size: 18px; }
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 200px
+}
+
+pre code {
+  padding: 10px 15px;
+  /*background: #f0f0f0;*/
+  /*border: 1px solid #ccc;*/
+  font-family: Consolas, monospace;
+  font-size: 14px;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: square;
+}
+
+a { color: #047cd9; text-decoration: none; font-weight: bold; font-size: 13px; }
+
+.details {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.details td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.details td:nth-child(odd) {
+  background: #f3f3f3;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+.table-of-contents,
+.table-of-contents ol {
+  list-style: none;
+}
+.table-of-contents li {
+  padding: 2px 0;
+}
+
+ol ol{margin-left: 30px;margin-bottom: 10px}
+
+ol ol li{padding: 0;margin: 0 }
+
+.step{color: #fff;background:#3dbcff;display:inline-block;padding:5px 10px;font-size: 120%;margin-top:30px;}
+
+.table-of-contents > li{margin-top: 20px}
+
+.table-of-contents > li > a{color: #000}
+
+.table-of-contents ol {
+  padding-left: 20px;
+}
+
+.to-top {
+  float: right;
+}
+
+a {
+  outline: none;
+}
+
+.features li{margin-bottom: 15px;}
+
+#to-top {
+  color: #fff;
+  background: #000;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+padding: 10px 10px 10px 10px;
+font-size: 32px;
+line-height: 1;
+opacity: 0.9;
+}
+
+#to-top:hover {
+  opacity: 1;
+}
+
+
+table td{border-bottom: 1px solid #ddd!important;padding: 20px 0}

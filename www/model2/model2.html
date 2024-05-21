@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PetBox 3D</title>
+  <script src="viewer/three.js"></script>
+  <script src="viewer/TrackballControls.js"></script>
+  <script src="viewer/Detector.js"></script>
+</head>
+<body class="viewport" style="overflow:hidden; display:block; width:100%; height:100%; border:0; background-color:#a26353;">
+
+ <script>  
+    var container, scene, renderer, camera, light, clock, loader;
+    var WIDTH, HEIGHT, VIEW_ANGLE, ASPECT, NEAR, FAR;
+    var mouseX = 0, mouseY = 0;
+    var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
+
+    container = document.querySelector('.viewport');
+
+    clock = new THREE.Clock();
+
+    WIDTH = window.innerWidth,
+    HEIGHT = window.innerHeight;
+
+    VIEW_ANGLE = 45,
+    ASPECT = WIDTH / HEIGHT,
+    NEAR = 1,
+    FAR = 10000;
+
+    scene = new THREE.Scene();
+
+    renderer = new THREE.WebGLRenderer({antialias: true});
+
+    renderer.setSize(WIDTH, HEIGHT);
+    renderer.setClearColor( 0xa26353, 1);
+
+    container.appendChild(renderer.domElement);
+
+camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+   /** camera = new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR); */
+
+camera.position.z=0;
+camera.position.y=60;
+camera.position.x=60;
+   /** camera.position.set(50, 50, 100); */
+
+  controls = new THREE.TrackballControls( camera );
+  controls.rotateSpeed = 4.0;
+  controls.zoomSpeed = 0;
+  controls.panSpeed = 0;
+  controls.noZoom = true;
+  controls.noPan = true;
+  controls.staticMoving = true;
+  controls.dynamicDampingFactor = 0.3;
+
+    scene.add(camera);
+
+      light = new THREE.AmbientLight(0xede8c1, 0.65);
+
+    scene.add(light);
+
+      light = new THREE.DirectionalLight(0xd3ba8e, 0.5);
+    light.position.set(0, -100, -60);
+
+    scene.add(light);
+
+     light = new THREE.DirectionalLight(0xd3ba8e, 0.5);
+
+    light.position.set(0, 100, 60);
+
+    scene.add(light);
+
+    loader = new THREE.JSONLoader();
+    var mesh;
+    loader.load('caixa-petbox.js', function (geometry, materials) {
+      var material = new THREE.MeshLambertMaterial({
+        map: THREE.ImageUtils.loadTexture('petboxtextura.png'), 
+      });
+
+      mesh = new THREE.Mesh(
+        geometry,
+        material
+      );
+
+      mesh.rotation.y = -Math.PI/12;
+
+      scene.add(mesh);
+      render(); 
+    });
+
+    function render() {
+     var time = clock.getElapsedTime();
+     mesh.rotation.y += .002;
+     mesh.rotation.x += .002;
+     mesh.rotation.z += .002;
+
+      controls.update();
+  camera.lookAt(scene.position);
+  renderer.render(scene, camera);
+
+     requestAnimationFrame(render);
+    }
+</script>
+</body>
+</html>

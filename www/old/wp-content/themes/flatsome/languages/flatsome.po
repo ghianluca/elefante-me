@@ -1,0 +1,451 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-09-11 23:39+0100\n"
+"PO-Revision-Date: 2013-09-11 23:40+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:22
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:27
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../archive.php:66
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:69
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:72
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:75
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:78
+msgid "Links"
+msgstr ""
+
+#: ../comments.php:55
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:67
+msgid "Comments are closed."
+msgstr ""
+
+#: ../header.php:142
+msgid "My account"
+msgstr ""
+
+#: ../header.php:162 ../woocommerce/myaccount/form-login.php:26
+#: ../woocommerce/myaccount/form-login.php:40
+msgid "Login"
+msgstr ""
+
+#: ../header.php:176 ../inc/template-tags.php:246
+msgid "Cart"
+msgstr ""
+
+#: ../image.php:105
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: ../image.php:107
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: ../no-results.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../page-checkout.php:16
+msgid "Shopping Cart"
+msgstr ""
+
+#: ../page-checkout.php:18
+msgid "Checkout details"
+msgstr ""
+
+#: ../page-checkout.php:20
+msgid "Order Complete"
+msgstr ""
+
+#: ../wishlist.php:75
+msgid "Product Name"
+msgstr ""
+
+#: ../wishlist.php:76
+msgid "Unit Price"
+msgstr ""
+
+#: ../wishlist.php:77
+msgid "Stock Status"
+msgstr ""
+
+#: ../wishlist.php:99
+msgid "Remove this product"
+msgstr ""
+
+#: ../wishlist.php:145
+msgid "No products were added to the wishlist"
+msgstr ""
+
+#: ../admin/front-end/options.php:43 ../admin/front-end/options.php:67
+msgid "Save All Changes"
+msgstr ""
+
+#: ../admin/front-end/options.php:68
+msgid "Options Reset"
+msgstr ""
+
+#: ../inc/extras.php:115
+msgid "Top Content"
+msgstr ""
+
+#: ../inc/extras.php:121
+msgid ""
+"Enter a value for this field. Shortcodes are allowed. This will be displayed "
+"at top of the category."
+msgstr ""
+
+#: ../inc/template-tags.php:77
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:95
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:297
+msgid "Cart subtotal"
+msgstr ""
+
+#: ../inc/template-tags.php:300
+msgid "View Cart"
+msgstr ""
+
+#: ../inc/template-tags.php:302
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: ../inc/widgets/recent-posts.php:95
+msgid "Title:"
+msgstr ""
+
+#: ../inc/widgets/recent-posts.php:98
+msgid "Number of posts to show:"
+msgstr ""
+
+#: ../woocommerce/content-product-lookbook.php:25
+#: ../woocommerce/content-product-pinterest-style.php:33
+#: ../woocommerce/content-product.php:73
+msgid "Quick View"
+msgstr ""
+
+#: ../woocommerce/cart/cart-empty.php:17
+msgid "Your cart is currently empty."
+msgstr ""
+
+#: ../woocommerce/cart/cart-empty.php:21
+msgid "&larr; Return To Shop"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:30 ../woocommerce/checkout/review-order.php:21
+msgid "Product"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:31
+msgid "Price"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:32
+msgid "Quantity"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:33 ../woocommerce/checkout/review-order.php:22
+msgid "Total"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:143
+msgid "Update Cart"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:144
+msgid "Proceed to Checkout &rarr;"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:152
+msgid "Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:153
+msgid "Enter Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:154
+msgid "Apply Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cross-sells.php:38
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: ../woocommerce/cart/mini-cart.php:55
+msgid "No products in the cart."
+msgstr ""
+
+#: ../woocommerce/cart/mini-cart.php:63
+msgid "Subtotal"
+msgstr ""
+
+#: ../woocommerce/cart/mini-cart.php:68
+msgid "View Cart &rarr;"
+msgstr ""
+
+#: ../woocommerce/cart/mini-cart.php:69
+msgid "Checkout &rarr;"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:22
+msgid "Calculate Shipping"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:29
+msgid "Select a country&hellip;"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:46
+#: ../woocommerce/cart/shipping-calculator.php:52
+#: ../woocommerce/cart/shipping-calculator.php:64
+msgid "State / county"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:53
+msgid "Select a state&hellip;"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:73
+msgid "City"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:81
+msgid "Postcode / Zip"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:86
+msgid "Update Totals"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:22
+msgid "Cart Totals"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:28
+#: ../woocommerce/checkout/review-order.php:27
+msgid "Cart Subtotal"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:35
+#: ../woocommerce/checkout/review-order.php:34
+msgid "Cart Discount"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:35 ../woocommerce/cart/totals.php:83
+msgid "[Remove]"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:46
+#: ../woocommerce/checkout/review-order.php:45
+msgid "Shipping"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:83
+#: ../woocommerce/checkout/review-order.php:82
+msgid "Order Discount"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:92
+#: ../woocommerce/checkout/review-order.php:91
+msgid "Order Total"
+msgstr ""
+
+#: ../woocommerce/cart/totals.php:135
+msgid ""
+"No shipping methods were found; please recalculate your shipping and enter "
+"your state/county and zip/postcode to ensure there are no other available "
+"methods for your location."
+msgstr ""
+
+#: ../woocommerce/checkout/form-checkout.php:42
+msgid "Click here to login"
+msgstr ""
+
+#: ../woocommerce/checkout/form-checkout.php:87
+msgid "Your order"
+msgstr ""
+
+#: ../woocommerce/checkout/form-shipping.php:34
+msgid "Ship to billing address?"
+msgstr ""
+
+#: ../woocommerce/checkout/form-shipping.php:40
+msgid "Shipping Address"
+msgstr ""
+
+#: ../woocommerce/checkout/form-shipping.php:63
+msgid "Additional Information"
+msgstr ""
+
+#: ../woocommerce/checkout/review-order.php:143
+msgid "Payment method"
+msgstr ""
+
+#: ../woocommerce/checkout/review-order.php:188
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your "
+"order. You may be charged more than the amount stated above if you fail to "
+"do so."
+msgstr ""
+
+#: ../woocommerce/checkout/review-order.php:188
+msgid "Update totals"
+msgstr ""
+
+#: ../woocommerce/checkout/review-order.php:202
+msgid "I have read and accept the"
+msgstr ""
+
+#: ../woocommerce/checkout/review-order.php:202
+msgid "terms &amp; conditions"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:18
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:22
+msgid "Please attempt your purchase again or go to your account page."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:24
+msgid "Please attempt your purchase again."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:28
+msgid "Pay"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:30
+msgid "My Account"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:36
+#: ../woocommerce/checkout/thankyou.php:71
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:40
+msgid "Order:"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:44
+msgid "Date:"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:48
+msgid "Total:"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:53
+msgid "Payment method:"
+msgstr ""
+
+#: ../woocommerce/loop/no-products-found.php:14
+msgid "No products found which match your selection."
+msgstr ""
+
+#: ../woocommerce/myaccount/form-login.php:29
+msgid "Username or email"
+msgstr ""
+
+#: ../woocommerce/myaccount/form-login.php:33
+#: ../woocommerce/myaccount/form-login.php:85
+msgid "Password"
+msgstr ""
+
+#: ../woocommerce/myaccount/form-login.php:50
+msgid "Lost Password?"
+msgstr ""
+
+#: ../woocommerce/myaccount/form-login.php:60
+#: ../woocommerce/myaccount/form-login.php:101
+msgid "Register"
+msgstr ""
+
+#: ../woocommerce/myaccount/form-login.php:66
+msgid "Username"
+msgstr ""
+
+#: ../woocommerce/myaccount/form-login.php:78
+msgid "Email"
+msgstr ""
+
+#: ../woocommerce/myaccount/form-login.php:89
+msgid "Re-enter password"
+msgstr ""
+
+#: ../woocommerce/shop/breadcrumb-single-product.php:34
+#: ../woocommerce/shop/breadcrumb.php:34
+msgid "Home"
+msgstr ""
+
+#: ../woocommerce/single-product/related.php:36
+msgid "Related Products"
+msgstr ""
+
+#: ../woocommerce/single-product/review.php:23
+msgid "out of 5"
+msgstr ""
+
+#: ../woocommerce/single-product/review.php:28
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: ../woocommerce/single-product/up-sells.php:40
+msgid "Complete the look"
+msgstr ""
