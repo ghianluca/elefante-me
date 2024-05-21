@@ -2,6 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
+		<link id="styles" href="assets/css/style.css" rel="stylesheet" />
 		<title>Elefante | Grandes Ideias - Design e comunicação em Porto Alegre</title>
 		<meta name="description" content="Trabalhamos com design e comunicação, criando identidades e peças visuais para empresas, instituições, eventos e produtos. ">
 				<link rel="shortcut icon" type="image/png" href="assets/images/favicon_elefante.png" />
@@ -83,59 +84,65 @@
 									</div>
 								</div>
 								<!-- / .logo -->
-
-
 								<div class="menu-container">
 									<ul class="visible-md visible-lg">
 										<li class="active">
-											<a href="#home">HOME</a>
+											<a href="#home" data-translate="home">HOME</a>
 										</li>
 										<li >
-											<a href="#elefante">ELEFANTE</a>
+											<a href="#elefante" data-translate="about">SOBRE MIM</a>
 										</li>
 										<li>
-											<a href="#servicos">EXPERIÊNCIAS</a>
+											<a href="#servicos" data-translate="experiences">EXPERIÊNCIAS</a>
 										</li>
 										<li>
-											<a href="#portfolio">PORTFOLIO</a>
+											<a href="#portfolio" data-translate="portfolio">PORTFOLIO</a>
 										</li>
 										<li>
-											<a href="#quemsomos">QUEM SOU</a>
-										</li>
-										<li>
-											<a href="#contato">CONTATO</a>
+											<a href="#contato" data-translate="contact">CONTATO</a>
 										</li>
 									</ul>
 
 									<div id="mobile-menu-button" class="hidden-md hidden-lg">  
 										<i class="fa fa-bars"></i>
 									</div> 
-
 								</div>
 
 								<ul id="mobile-menu" class="hidden-lg hidden-md">
 									<li class="active">
-										<a href="#home">HOME</a>
+										<a href="#home" data-translate="home">HOME</a>
 									</li>
 									<li >
-										<a href="#elefante">ELEFANTE</a>
+										<a href="#elefante" data-translate="about">SOBRE MIM</a>
 									</li>
 									<li>
-										<a href="#servicos">EXPERIÊNCIAS</a>
+										<a href="#servicos" data-translate="experiences">EXPERIÊNCIAS</a>
 									</li>
 									<li>
-										<a href="#portfolio">PORTFOLIO</a>
+										<a href="#portfolio" data-translate="portfolio">PORTFOLIO</a>
+									<li>
+										<a href="#contato" data-translate="contact">CONTATO</a>
 									</li>
 									<li>
-										<a href="#quemsomos">QUEM SOU</a>
+										<div class="menu-language-container-mobile">
+											<figure class="icon-brazil">
+											  <img src="/assets/images/icons/icon-brazil-color.svg" alt="Brazil Icon">
+											</figure>
+											<figure class="icon-usa">
+											  <img src="/assets/images/icons/icon-usa-mobile.svg" alt="USA Icon">
+											</figure>
+										</div>
 									</li>
-									<li>
-										<a href="#contato">CONTATO</a>
-									</li>
-								</ul>						
-
-							</div>
-
+								</ul>
+								<div class="menu-language-container">
+									<figure class="icon-brazil">
+									  <img src="/assets/images/icons/icon-brazil-color.svg" alt="Brazil Icon">
+									</figure>
+									<figure class="icon-usa">
+									  <img src="/assets/images/icons/icon-usa-black-and-white.svg" alt="USA Icon">
+									</figure>
+								</div>											  
+							</div> 
 						</div>
 					</div>
 				</div>
@@ -152,15 +159,15 @@
 			</section>
 
 			<!-- #about -->
-			<section id="elefante" class="section padding">
+			<section id="elefante" class="section padding2">
 				<div class="container">
 
 					<header class="header-section">
-						<h2 data-min-font-size="46">ELEFANTE<span class="color">.</span>ME</h2>
+						<h2 data-min-font-size="46" data-translate="aboutMe">SOBRE MIM<span class="color">:</span></h2>
 					</header>
 
 					<div class="text">
-									<p>Olá pessoa, seja bem-vinda ao meu site! Me chamo Rafael Nobre, sou designer formado pela UFPel e trabalho em diversas áreas do design e da comunicação. Ok, mas e o que é Elefante, certo?! 
+									<p data-translate="intro">Olá pessoa, seja bem-vinda ao meu site! Me chamo Rafael Nobre, sou designer formado pela UFPel e trabalho em diversas áreas do design e da comunicação. Ok, mas e o que é Elefante, certo?! 
 									<br>
 									<br>
 Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio onde trabalhamos juntos por 3 anos. Atualmente é um projeto pessoal que mantenho, faço projetos como freelancer e divulgo meus trabalhos. Há alguns anos voltei minha carreira totalmente para o digital, onde tenho atuado como UX e UI Designer, trabalhando em empresas de tecnologia e desenvolvimento de software. <br><br>Fique à vontade para conhecer um pouco mais do meu trabalho! 
@@ -170,14 +177,48 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 				</div>
 			</section>
 			<!-- / #about -->
-
+			<section id="jobs" class="section padding3">
+				<div class="container">
+					
+					<header class="header-section-jobs">
+						<h3 data-translate="jobs">ONDE TRABALHEI<span class="color">:</span></h3>
+					</header>
+					<div class="companies">
+						<div class="picpay">
+							<figure id="fig1">
+								<img>
+							</figure>
+						</div>
+						<div class="casas-bahia">
+							<figure id="fig2">
+								<img>
+							</figure>
+							</div>
+						<div class="sicredi">
+							<figure id="fig3">
+								<img>
+							</figure>
+						</div>
+						<div class="renner">
+							<figure id="fig4">
+								<img>
+							</figure>
+						</div>
+						<div class="cwi">
+							<figure id="fig5">
+								<img>
+							</figure>	
+						</div>
+					</div>
+				</div>
+			</section>
 			
 			<!-- #services -->
 			<section id="services" class="section padding parallax" style="background-image: url('assets/images/other/parallax-6.jpg');">
 				<div class="container">
 
 					<header class="header-section style-2">
-						<h2><span style="color: rgb(255, 255, 255);"><br><br>Crio design para diversas mídias. <br> Do processo de descobrimento à resolução do problema.</span></h2>
+						<h2 data-translate="introTwo"><span style="color: rgb(255, 255, 255);"><br><br>Crio design para diversas mídias. <br> Do processo de descobrimento à resolução do problema.</span></h2>
 					</header>
 
 				</div>
@@ -191,14 +232,14 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 				<div class="container">
 					
 					<header class="header-section">
-						<h2>EXPERIÊNCIAS<span class="color">_</span></h2>
+						<h2 data-translate="experiencesTwo">EXPERIÊNCIAS<span class="color">_</span></h2>
 					</header>
 					
 					
 					<div class="row">
 					<div class="col-md-4">
 								<div class="text" style="padding-top: 10px;">
-									<p>Acho que me tornei aquilo que chamam de <span class="color"><a href="https://medium.com/chocoladesign/designer-unic%C3%B3rnio-existe-ou-n%C3%A3o-sim-85b59c411789" target="_blank"><strong>designer unicórnio.</strong></a></span> Já trabalhei com diversos projetos, mas o que mais tenho experiência e gosto de fazer é nas áreas e UI, UX e Branding. Dúvidas? <span class="color"><a href="#contato"><strong>Entre em contato!</strong></a></span></p>
+									<p data-translate="introThree">Acho que me tornei aquilo que chamam de <span class="color"><a href="https://medium.com/chocoladesign/designer-unic%C3%B3rnio-existe-ou-n%C3%A3o-sim-85b59c411789" target="_blank"><strong>designer unicórnio.</strong></a></span> Já trabalhei com diversos projetos, mas o que mais tenho experiência e gosto de fazer é nas áreas e UI, UX e Branding. Dúvidas? <span class="color"><a href="#contato"><strong>Entre em contato!</strong></a></span></p>
 								
 								</div>
 						</div>
@@ -208,8 +249,8 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 									<i class="icon-imac"></i>
 								</div>
 								<div class="text">
-									<h3 class="heading">DIGITAL</h3>
-									<p>Website 
+									<h3 class="heading" data-translate="digitalTitle">DIGITAL</h3>
+									<p data-translate="digitalContent">Website 
 									<span class="color"> / </span>
 									Hotsite
 									<span class="color"> / </span>
@@ -234,8 +275,8 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 									<i class="icon-printer"></i>
 								</div>
 								<div class="text">
-									<h3 class="heading">GRÁFICO E EDITORIAL</h3>
-									<p>Flyer
+									<h3 class="heading" data-translate="graphicTitle">GRÁFICO E EDITORIAL</h3>
+									<p data-translate="graphicContent">Flyer
 									<span class="color"> / </span>
 									Cartaz
 									<span class="color"> / </span>
@@ -260,15 +301,15 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</div>
 						</div>
-
+						
 						<div class="col-md-4">
 							<div class="infobox style-5">
 								<div class="icon">
 									<i class="icon-notebook"></i>
 								</div>
 								<div class="text">
-									<h3 class="heading">UX E DESIGN THINKING</h3>
-									<p>Mapa de empatia
+									<h3 class="heading" data-translate="uxTitle">UX E DESIGN THINKING</h3>
+									<p data-translate="uxContent">Mapa de empatia
 									<span class="color"> / </span>
 									Criação de Personas 
 									<span class="color"> / </span>
@@ -283,15 +324,15 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</div>
 						</div>
-					
+						
 						<div class="col-md-4">
 							<div class="infobox style-5">
 								<div class="icon">
 									<i class="icon-fullscreen"></i>
 								</div>
 								<div class="text">
-									<h3 class="heading">IDENTIDADE VISUAL</h3>
-									<p>Logo
+									<h3 class="heading" data-translate="identityTitle">IDENTIDADE VISUAL</h3>
+									<p data-translate="identityContent">Logo
 									<span class="color"> / </span>
 									Cartão de visita
 									<span class="color"> / </span>
@@ -304,15 +345,15 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</div>
 						</div>
-
+						
 						<div class="col-md-4">
 							<div class="infobox style-5">
 								<div class="icon">
 									<i class="icon-grid"></i>
 								</div>
 								<div class="text">
-									<h3 class="heading">BRANDING</h3>
-									<p>Naming
+									<h3 class="heading" data-translate="brandingTitle">BRANDING</h3>
+									<p data-translate="brandingContent">Naming
 									<span class="color"> / </span>
 									Logo
 									<span class="color"> / </span>
@@ -326,12 +367,12 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 									</p>
 								</div>
 							</div>
-						</div>
+						</div>						
 					</div>
 				</div>
 			</section>
 			<!-- / #other-services -->
-
+			
 			<!-- #works -->
 			<section id="portfolio" class="section portfolio padding-top">
 
@@ -460,6 +501,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 						<!-- / #work-item -->
 
 						<!-- #work-item -->
+<!--
 						<div class="work-item  visualidentity printdesign socialmedia">
 							<div class="work-image">
 								<img src="assets/images/work/oautenticocroissant1.jpg" alt="O Autêntico Croissant"/>
@@ -477,6 +519,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->							
 						
 						<!-- #work-item -->
@@ -580,6 +623,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 						<!-- / #work-item -->	
 
 <!-- #work-item -->
+<!--
 						<div class="work-item  visualidentity printdesign socialmedia">
 							<div class="work-image">
 								<img src="assets/images/work/natallove1.jpg" alt="NATAL #LÓVE"/>
@@ -597,9 +641,11 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->
 
 <!-- #work-item -->
+<!--
 						<div class="work-item set-width  printdesign  digital">
 							<div class="work-image">
 								<img src="assets/images/work/obrapronta0.jpg" alt="Obra Pronta"/>
@@ -617,6 +663,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->
 
 						<!-- #work-item -->
@@ -640,6 +687,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 						<!-- / #work-item -->
 						
 						<!-- #work-item -->
+<!--
 						<div class="work-item  branding visualidentity printdesign socialmedia">
 							<div class="work-image">
 								<img src="assets/images/work/wilhelm0.png" alt="Wilhelm - Governança Integrada"/>
@@ -657,9 +705,11 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->				
 						
 	<!-- #work-item -->
+<!--
 						<div class="work-item  visualidentity printdesign socialmedia">
 							<div class="work-image">
 								<img src="assets/images/work/pascoanalo1.jpg" alt="Páscoa na Ló"/>
@@ -677,9 +727,11 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->
 						
 						<!-- #work-item -->
+<!--
 						<div class="work-item  visualidentity printdesign socialmedia">
 							<div class="work-image">
 								<img src="assets/images/work/cronut1.jpg" alt="Cronut da Ló"/>
@@ -697,9 +749,11 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->	
 
 						<!-- #work-item -->
+<!--
 						<div class="work-item  visualidentity printdesign">
 							<div class="work-image">
 								<img src="assets/images/work/lagartixadasdunas0.png" alt="Projeto de Conservação Lagartixa-das-dunas"/>
@@ -717,6 +771,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->
 						
 <!-- #work-item -->
@@ -860,6 +915,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 						<!-- / #work-item -->
 
 	<!-- #work-item -->
+<!--
 						<div class="work-item visualidentity printdesign">
 							<div class="work-image">
 								<img src="assets/images/work/fatherson0.jpg" alt="Fatherson"/>
@@ -877,6 +933,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 								</div>
 							</a>
 						</div>
+-->
 						<!-- / #work-item -->
 
 												<!-- #work-item -->
@@ -926,15 +983,15 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 			<!-- / #works -->
 
 			<!-- #team -->
-			<section id="quemsomos" class="section padding">
+			<!--<section id="quemsomos" class="section padding">
 			<div class="container">
 
 					<header class="header-section">
 						<h2>QUEM SOU<span class="color">:</span></h2>
-					</header>
+					</header>-->
 
 					<!-- .team-list -->
-					<div class="team-list row">
+					<!--<div class="team-list row">
 						
 						<div class="col-md-6 col-sm-4">
 
@@ -957,17 +1014,17 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 
 						</div>									
 
-					</div>
+					</div>-->
 					<!-- .team-list -->
 
-			</div>
-			</section>
+			<!--</div>
+			</section>-->
 			<!-- / #team -->
 
 
 
 			<!-- #process -->
-			<section id="comotrabalhamos" class="section padding parallax" style="background-image: url('assets/images/other/parallax-1.jpg');">
+			<!--<section id="comotrabalhamos" class="section padding parallax" style="background-image: url('assets/images/other/parallax-1.jpg');">
 				<div class="container">
 
 					<header class="header-section">
@@ -1021,7 +1078,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 					</div>
 
 				</div>
-			</section>
+			</section>-->
 			<!-- / #process -->
 
 			<!-- #footer -->
@@ -1030,42 +1087,29 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 					<div class="row">
 
 						<div class="col-md-6">
-
-							<h3 class="footer-title">ONDE ESTOU</h3>
-
+							<h3 class="footer-title" data-translate="footerTitle">QUEM SOU EU</h3>
+							<img src="assets/images/image-footer.jpg" class="image-footer" alt="Foto Perfil">
+							<p class="name-footer" data-translate="footerName">Rafael Nobre</p>
 							<div class="contact-info">
-
-								<p>
-									Trabalho com design e comunicação em Porto Alegre, criando identidades, marcas, interfaces e soluções digitais. Atualmente focado em UX, UI e Branding.
-								<br>
-								<br>
-									Interessado? Entre em contato:
+								<p class="text-footer" data-translate="footerText">
+									Trabalho com design há mais de 14 anos, ajudando empresas a maximizar suas receitas, tangibilizando o pensamento através de processos estruturados.
 								</p>
-
-
-									<address>
+								<address data-translate="footerAddress">
 									Porto Alegre, RS, Brasil<br>
-									<a href="mailto:elefante@elefante.me">nobre@elefante.me</a><br>
-									<abbr title="Telefone"></abbr> +55 51 99361-8932
+									<a href="mailto:elefante@elefante.me">nobrepires@gmail.com</a><br>
+									<abbr title="Telefone"></abbr>+55 51 993618932
 								</address>
-								
 							</div>
-
 							<div class="social">
-							
-							<p>
-								<ul>
-									<li><a href="https://www.facebook.com/rafael.nobre.794" title="Facebook" target="blank"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="https://twitter.com/brnoe" title="Twitter" target="blank"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/nobrepires/" title="Linkedin" target="blank"><i class="fa fa-linkedin"></i></a></li>
-																	
-								</ul>
+								<p>
+									<ul>
+										<li><a href="https://www.linkedin.com/in/nobrepires/" title="Linkedin" target="blank"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
 								</p>
-							</div>							
+							</div>
+						</div>						
 
-						</div>
-
-						<div class="col-md-6">
+						<!--<div class="col-md-6">
 
 							<h3 class="footer-title">ENTRE EM CONTATO!</h3>
 
@@ -1091,7 +1135,7 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 
 							</form>
 
-						</div>						
+						</div>-->						
 
 					</div>
 
@@ -1108,13 +1152,9 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-60597631-1');ga('send','pageview');
     </script>
-
-		</div>
 		<!-- / #wrap -->
-
-
-
 		<!-- jQuery -->
+		<script src="assets/js/icons.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.appear.js"></script>
 		<script src="assets/js/jquery.placeholder.js"></script>
@@ -1130,6 +1170,5 @@ Elefante foi um estúdio de comunicação que abri em Porto Alegre com um sócio
 		<script src="assets/js/jquery.fittext.js"></script>
 		<script src="assets/js/routify.js"></script>
 		<script src="assets/js/custom.js"></script>
-
 	</body>
 </html>

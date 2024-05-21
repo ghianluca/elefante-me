@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Table of Content */
 /* ================================================== */
+/*	#jobs/companies */
 /*	#Typograpgy */
 /*	#Helper */
 /*	#Preloader */
@@ -18,7 +19,175 @@
 /*	#Blog */
 /*	#Footer */
 /*  ============  */
+
+/*============================ */
+/*	COMPANIES */
+/*============================ */
+#jobs .container .companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;}
+#jobs .container .companies .picpay #fig1::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-picpay.png);}
+#jobs .container .companies .picpay #fig1:hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-picpay-color.png);}
+#jobs .container .companies .picpay #fig1 img{
+  cursor: pointer;}
+#jobs .container .companies .picpay #fig1{
+  width: 163.29px;
+  height: 52.4px;
+  transition: 0.6s ease;
+  background-image: url(/assets/images/companies/logo-picpay.png);}
+#jobs .container .companies .picpay #fig1:hover {
+  background-image: url(/assets/images/companies/logo-picpay-color.png);}
+#jobs .container .companies .casas-bahia #fig2::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-casas-bahia.png);}
+#jobs .container .companies .casas-bahia #fig2:hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-casas-bahias-color.png);}
+#jobs .container .companies .casas-bahia #fig2 img{
+  cursor: pointer;}
+#jobs .container .companies .casas-bahia #fig2{
+  width: 205.33px;
+  height: 56.81px;
+  transition: all 0.6s ease;
+  background-image: url(/assets/images/companies/logo-casas-bahia.png);}
+#jobs .container .companies .casas-bahia #fig2:hover {
+  background-image: url(/assets/images/companies/logo-casas-bahias-color.png);}
+#jobs .container .companies .sicredi #fig3::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-sicredi.png);}
+#jobs .container .companies .sicredi #fig3:hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-sicredi-color.png);}
+#jobs .container .companies .sicredi #fig3 img{
+  cursor: pointer;}
+#jobs .container .companies .sicredi #fig3{
+  width: 214.59px;
+  height: 66.92px;
+  transition: all 0.6s ease;
+  background-image: url(/assets/images/companies/logo-sicredi.png);}
+#jobs .container .companies .sicredi #fig3:hover{
+  background-image: url(/assets/images/companies/logo-sicredi-color.png);}
+#jobs .container .companies .renner #fig4::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-renner.png);}
+#jobs .container .companies .renner #fig4:hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-renner-color.png);}
+#jobs .container .companies .renner #fig4 img{
+  cursor: pointer;}
+#jobs .container .companies .renner #fig4{
+  width: 200px;
+  height: 53.08px;
+  transition: all 0.6s ease;
+  background-image: url(/assets/images/companies/logo-renner.png);}
+#jobs .container .companies .renner #fig4:hover{
+  background-image: url(/assets/images/companies/logo-renner-color.png);}
+#jobs .container .companies .cwi #fig5::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-cwi.png);}
+#jobs .container .companies .cwi #fig5:hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url(/assets/images/companies/logo-cwi-color.png);}
+#jobs .container .companies .cwi #fig5 img{
+  cursor: pointer;}
+#jobs .container .companies .cwi #fig5{
+  width: 84.61px;
+  height: 46.15px;
+  transition: all 0.6s ease;
+  background-image: url(/assets/images/companies/logo-cwi.png);}
+#jobs .container .companies .cwi #fig5:hover{
+  background-image: url(/assets/images/companies/logo-cwi-color.png);}
+@media (max-width: 990px) {
+  #jobs .container .companies img {
+    width: 100%;
+  }
+  #jobs .container .companies {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+/*  ============  */
+/*============================ */
+/*	MENU LANGUAGES */
+/*============================ */
+.menu-language-container {
+  position: absolute;
+  top: 38%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;}
+.menu-language-container .icon-brazil,
+.menu-language-container .icon-usa {
+  width: 48px;
+  height: 16px;
+  transition: 0.6s ease;
+  cursor: pointer;}
+.menu-language-container .icon-brazil img,
+.menu-language-container .icon-usa img {
+  width: 100%;
+  height: auto;}
+.menu-language-container .icon-brazil.color img {
+  content: url('/assets/images/icons/icon-brazil-color.svg');}
+.menu-language-container .icon-brazil.bw img {
+  content: url('/assets/images/icons/icon-brazil-black-and-white.svg');}
+.menu-language-container .icon-usa.color img {
+  content: url('/assets/images/icons/icon-usa-color.svg');}
+.menu-language-container .icon-usa.bw img {
+  content: url('/assets/images/icons/icon-usa-black-and-white.svg');}
+
 *, *:before, *:after {
+  user-select: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -27,8 +196,19 @@
 html, body {
   position: relative;
   background: #fff;
-  font: 400 16px/26px "Roboto Slab", serif;
-  color: #333; }
+  font:"Roboto Slab", serif;
+  color: #333;
+}
+
+  ::-webkit-scrollbar {
+    width: 10px;}
+  ::-webkit-scrollbar-thumb{
+    background-color: #F0534D;
+    border-radius: 5px;
+  }
+  body .fit-vids-style {
+    display: none;
+  }
 
 /*============================ */
 /*	TYPOGRAPHY */
@@ -143,6 +323,14 @@ h1, h2, h3, h4, h5, h6 {
 .no-margin-bottom {
   margin-bottom: 0; }
 
+.padding2{
+  padding: 100px 0 10px 0;
+}
+
+.padding3{
+  padding: 10px 0 100px 0;
+}
+
 .no-padding {
   padding: 0; }
 
@@ -227,6 +415,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding-bottom: 50px; }
   #header-wrap .logo {
+    position: absolute;
     margin: 15px;
     text-align: center; }
     #header-wrap .logo img {
@@ -271,9 +460,13 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     background: #fff; }
   #navigation .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #F0534D;
     position: relative; }
   #navigation .logo {
+    position: absolute;
     background: #F0534D;
     height: 100px;
     width: 100px;
@@ -372,10 +565,19 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(0, 0, 0, 0.2);
     z-index: -1; }
 
+.header-section-jobs h3 {
+  margin: 0 0 20px;
+}
+.header-section {
+  margin: 0 0 50px; }
+  .header-section h3 {
+    font-size: 24px;
+    position: relative;
+    margin: 0 0 20px; }
 .header-section {
   margin: 0 0 50px; }
   .header-section h2 {
-    font-size: 120px;
+    font-size: 7.5rem;
     position: relative;
     margin: 0 0 20px; }
     .header-section h2:after {
@@ -389,14 +591,14 @@ h1, h2, h3, h4, h5, h6 {
   .header-section.style-2 {
     text-align: center; }
     .header-section.style-2 h2 {
-      font-size: 30px;
+      font-size: 1.9rem;
       letter-spacing: 2px; }
       .header-section.style-2 h2:after {
         display: none; }
           .header-section.style-3 {
     text-align: center; }
     .header-section.style-3 h2 {
-      font-size: 30px;
+      font-size: 1.9rem;
       letter-spacing: 2px;
       padding-top:50px;
        }
@@ -408,7 +610,10 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0; }
   .header-section.margin-top-bottom {
     margin: 100px 0 50px; }
-
+#services .container .header-section h2 span {
+  font-size: 4rem;
+  line-height: 4rem;
+}
 /*============================ */
 /*	INFOBOX */
 /*============================ */
@@ -643,6 +848,9 @@ h1, h2, h3, h4, h5, h6 {
       border-color: #333; }
       .servicebox.style-2:hover span:after {
         border-color: #333; }
+#servicos {
+  padding: 100px 0 0;
+}
 
 /* END SERVICEBOX */
 /* CTA */
@@ -916,7 +1124,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   width: 100%;
   height: 230px; }
-
 /*============================ */
 /*	TEAM */
 /*============================ */
@@ -1760,18 +1967,53 @@ h1, h2, h3, h4, h5, h6 {
 #contato {
   background: #333;
   color: #fff;
-  padding: 80px 0; }
+  padding: 100px 0; }
+#contato .copy-footer {
+  color: #d9d9d9;
+  text-align: center;
+  position: relative;
+  bottom: 0px;}
+@media (max-width: 990px) {
+  #contato {
+    padding: 80px 0 30px;
+  }
+}
+#contato .container .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contato .container .row .col-lg-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   #contato .logo {
     margin: 0 auto 80px; }
   #contato .footer-title {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #fff;
-    margin: 0 0 50px; }
+    margin: 0 0 32px; }
+    #contato .container .row .col-md-6 .image-footer {
+      width: 100px;
+      height: 100px;
+      border-radius: 40% 40% 40% 5%;
+      margin: 0 0 16px;}
+    #contato .container .row .col-md-6 .name-footer {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 700;}
+      #contato .container .row .col-md-6 .text-footer {
+        font-weight: 300;
+        font-size: 16px;
+      }
   #contato address {
-    margin: 50px 0 100px; }
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0 8px; }
   #contato .form-control {
     background-color: transparent;
     border: 1px solid #808080;
@@ -1838,3 +2080,40 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 990px) {
+.menu-language-container-mobile .icon-brazil,
+.menu-language-container-mobile .icon-usa {
+  width: 48px;
+  height: 16px;
+  transition: 0.6s ease;
+  cursor: pointer;}
+.menu-language-container-mobile .icon-brazil img,
+.menu-language-container-mobile .icon-usa img {
+  width: 100%;
+  height: auto;}
+.menu-language-container-mobile .icon-brazil.color img {
+  content: url('/assets/images/icons/icon-brazil-color.svg');}
+.menu-language-container-mobile .icon-brazil.bw img {
+  content: url('/assets/images/icons/icon-brazil-mobile.svg');}
+.menu-language-container-mobile .icon-usa.color img {
+  content: url('/assets/images/icons/icon-usa-color.svg');}
+.menu-language-container-mobile .icon-usa.bw img {
+  content: url('/assets/images/icons/icon-usa-mobile.svg');}
+.menu-language-container-mobile{
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+.menu-language-container {
+  display: none;
+}
+#mobile-menu-button .fa {
+   position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);}
+}
